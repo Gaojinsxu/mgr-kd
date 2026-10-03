@@ -123,17 +123,9 @@ pipeline = load_pipeline(config, "artifacts/mgr_kd.pt")
 result = pipeline.discover(head_name="示例头实体", relation_name="示例关系")
 ```
 
-## Reproducibility
 
-- Random seeds are configured explicitly.
-- Candidate generation is constrained by the observed relation schema.
-- LLM decoding uses zero temperature.
-- Invalid or unavailable LLM responses fall back to graph-derived scores.
-- Runtime artifacts are isolated from tracked source files.
 
-## Citation
 
-Please cite the accompanying manuscript when using MGR-KD. Formal citation metadata can be added after publication.
 
 ## License
 
